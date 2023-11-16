@@ -35,8 +35,8 @@ const ChatInput = ({ onSubmitCallback, isLoading }) => {
           <div className="flex w-full items-center">
             <div className="rounded-md flex flex-col w-full dark:border-gray-900/50 flex-grow relative border border-black/10 dark:text-white rounded-xl shadow-xs dark:shadow-xs dark:bg-zinc-700 bg-white">
               <textarea
-                className="m-0 w-full rounded-md  resize-none border-0 bg-gray-500 py-[10px] pr-10 md:py-4 md:pr-12 pl-3 md:pl-4"
-                type="text"
+                style={{ maxHeight: 200, height: 44, overflowY: "hidden" }}
+                className="text-base flex items-center m-0 w-full rounded-md resize-none border-0 bg-gray-500 py-2 pr-10 md:pr-12 pl-3 md:pl-4"
                 value={value}
                 placeholder="Send a message"
                 autoFocus
@@ -47,7 +47,7 @@ const ChatInput = ({ onSubmitCallback, isLoading }) => {
               <button
                 type="submit"
                 disabled={value?.trim()?.length === 0 || isLoading}
-                className="absolute p-1 rounded-md inset-y-1/2 -translate-y-full  md:p-2 md:right-3 right-2 disabled:text-gray-400 text-white  transition-colors disabled:opacity-40 text-white"
+                className="flex justify-center items-center absolute p-1 rounded-md inset-y-1/2 -translate-y-1/2  md:p-2 md:right-3 right-2 disabled:text-gray-400 text-white  transition-colors disabled:opacity-40 text-white"
               >
                 <IoMdSend size={20} />
               </button>

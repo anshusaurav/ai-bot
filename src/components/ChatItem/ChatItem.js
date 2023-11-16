@@ -4,7 +4,7 @@ const ChatItem = ({ item }) => {
     const str = item?.output?.output_text?.join("\n");
     return str?.split("\n").map((s, index) => {
       return (
-        <p className="mt-2" key={index}>
+        <p className="[&:not(:first-of-type)]:mt-2" key={index}>
           {s}
         </p>
       );
