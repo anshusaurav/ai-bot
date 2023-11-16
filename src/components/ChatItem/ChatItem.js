@@ -12,7 +12,7 @@ const ChatItem = ({ item }) => {
   };
 
   return (
-    <div className="chat- w-full text-token-text-primary border-b border-black/10 dark:border-gray-900/50 dark:border-gray-900/50 dark:[&:nth-of-type(odd)]:dark:bg-zinc-600 dark:[&:nth-of-type(even)]:dark:bg-zinc-800 text-left">
+    <div className="chat w-full text-token-text-primary border-b border-black/10 dark:border-gray-900/50 dark:border-gray-900/50 dark:[&:nth-of-type(odd)]:dark:bg-zinc-600 dark:[&:nth-of-type(even)]:dark:bg-zinc-800 text-left">
       <div className="p-4 justify-center text-base md:gap-6 md:py-6 m-auto">
         <div className="flex flex-1 gap-4 text-base mx-auto md:gap-6 md:max-w-2xl lg:max-w-[38rem] xl:max-w-3xl }">
           <div className="flex-shrink-0 flex flex-col relative items-end">

@@ -111,9 +111,11 @@ const ChatPanel = () => {
         <div className="flex h-full flex-col">
           <div className="flex-1 overflow-y-auto">
             <div className="relative h-full">
-              <div className="flex flex-col text-sm dark:bg-zinc-800 pb-16">
-                <ChatList items={chats} isLoading={isLoading} />
-              </div>
+              {chats?.length !== 0 && (
+                <div className="flex flex-col text-sm dark:bg-zinc-800 pb-16">
+                  <ChatList items={chats} isLoading={isLoading} />
+                </div>
+              )}
             </div>
           </div>
         </div>
